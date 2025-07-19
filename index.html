@@ -18,7 +18,7 @@ header {
 
 .grid-container { 
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 20px;
     justify-items: center;
@@ -65,11 +65,12 @@ footer {
     text-align: center;
     background-color: black;
     }
-    fieldset {
+    .credit {
       background-image: radial-gradient(wheat, chocolate);
     }
-    legend {
+    .name {
       text-align: center;
+      color: white;
     }
     
   </style>
@@ -90,29 +91,30 @@ footer {
         <img src="https://s3-eu-west-2.amazonaws.com/photos.thearticle.com/app/production/articles/3867/cover_desktop_a-turning-point-in-chess-history.jpg" alt="Chess History">
         <h3><u>History</u></h3>
         <p>Chess began in India in the 6th century CE, named as “chaturanga,” meaning four divisions of an army. The game then spread to Persia, where it developed into “shatranj,” and from there it leapt to the Islamic world and, after several rounds of modifications, finally to Europe. Rules and pieces evolved over the centuries until finally maturing into the modern game in the 15th century.</p>
-        <button>Explore</button>
+        <a href="https://www.chess.com/article/view/best-chess-players-of-all-time"><button>Explore</button></a>
     </div>
     <div class="card">
         <img src="https://t3.ftcdn.net/jpg/02/32/04/72/360_F_232047264_DNJxHfsggf8Z2tAQHaeMvfpIiqBAh3Bl.jpg" alt="Chess Pieces">
         <h3><u>Pieces</u></h3>
         <p>A game of chess is made up of 32 pieces, 16 for the white and 16 for the black players, of which there are two sets, usually in white and black. Each family comes with 1 king, 1 queen, 2 rooks, 2 knights, 2 bishops, and 8 pawns. Each piece invariably has its own specific way of moving, and a numerical value (though in fact it can only be captured, and not make a move of its own, the zero being an exception to this rule).</p>
-        <button>Explore</button>
+        <a href="https://www.thearticle.com/a-turning-point-in-chess-history"><button>Explore</button></a>
     </div>
     <div class="card">
         <img src="https://images.chesscomfiles.com/uploads/v1/article/25422.4d14257f.5000x5000o.a1255f82e94e.png" alt="Famous Chess Players">
         <h3><u>Famous Players</u></h3>
         <p>There are many players who have made an impact on chess. The most famous include a man known for his unyielding aggressiveness and a lengthy string as World Champion in Garry Kasparov, as well as a once in a generation American savant whose tunnel vision and play on the board fascinated the world, Bobby Fischer. In the modern era, the most dominating players are now either Gari Kasparov an aggressive type of player with good opening preparation and a great flair of endgames or Magnus Carlsen, an all round player and one of the greatest in history.</p>
-        <button>Explore</button>
+        <a href="https://chessklub.com/chess-pieces/"><button>Explore</button></a>
     </div>
     <div id="sources">
-      <center>
-      <fieldset>
-        <legend>Works Cited</legend>
+      <fieldset class="credit">
+        <legend id="name">Works Cited</legend>
         <p>Keene, Raymond. “A Turning Point in Chess History.” TheArticle, TheArticle, 5 June 2021, www.thearticle.com/a-turning-point-in-chess-history. </p>
         <p>“Chess+Pieces Images – Browse 421,463 Stock Photos, Vectors, and Video.” Adobe Stock, stock.adobe.com/search?k=chess%2Bpieces. Accessed 18 July 2025. </p>
         <p>Stapczynski, Colin. “The 10 Best Chess Players of All Time.” Chess.Com, Chess.com, 11 June 2025, www.chess.com/article/view/best-chess-players-of-all-time. </p>
-      </fieldset>  
-      </center>  
+      </fieldset> 
+      <fieldset>
+        <legend>Want to play some serious chess?</legend>
+      </fieldset>
     </div>
 </div>
 
